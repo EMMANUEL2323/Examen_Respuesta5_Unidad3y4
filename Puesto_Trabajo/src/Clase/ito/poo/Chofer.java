@@ -1,22 +1,22 @@
 package Clase.ito.poo;
-
+import java.util.HashSet;
 public class Chofer extends Empleado{
 
-	private String rutas;
+	private  HashSet<String>rutas;
 	private int noAutobus;
 	
 	public Chofer(String nombre, String apellido, String email, long celular, String nss, int noEmplado, float sueldo,
-			String puesto, String rutas, int noAutobus) {
+			String puesto, HashSet<String> rutas, int noAutobus) {
 		super(nombre, apellido, email, celular, nss, noEmplado, sueldo, puesto);
 		this.rutas=rutas;
 		this.noAutobus=noAutobus;
 	}
 
-	public String getRutas() {
+	public HashSet<String> getRutas() {
 		return rutas;
 	}
 
-	public void setRutas(String rutas) {
+	public void setRutas(HashSet<String> rutas) {
 		this.rutas = rutas;
 	}
 
